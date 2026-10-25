@@ -16,41 +16,41 @@
 }
 
 :root {
-  --paper: #f6f3eb;
-  --paper-2: #eae5d8;
-  --paper-3: #ddd7c8;
-  --ink: #17160f;
-  --ink-2: #57534a;
-  --ink-3: #6f6a5f;
-  --rule: #cdc6b5;
-  --rule-strong: #17160f;
-  --signal: #e8470f;
-  --signal-ink: #b8360a;
-  --signal-wash: #f8d9c9;
-  --ok: #1d6b47;
-  --ok-wash: #d5e6d6;
+  --paper: #ecdfc2;
+  --paper-2: #e2d1a8;
+  --paper-3: #d6c28f;
+  --ink: #1c1511;
+  --ink-2: #4a3a2c;
+  --ink-3: #6a5845;
+  --rule: #bfa97b;
+  --rule-strong: #1c1511;
+  --signal: #e8b724;
+  --signal-ink: #7a5600;
+  --signal-wash: #f4e3a0;
+  --ok: #1f6b3a;
+  --ok-wash: #cfe0c4;
   --ok-bright: #8fdcb2;
-  --kraft: #d6b98a;
-  --kraft-2: #c3a170;
-  --kraft-3: #a9844f;
-  --kraft-ink: #3b2a12;
-  --tape: rgba(255, 250, 235, .55);
-  --hole: #17160f;
-  --manila: #f1e3bf;
-  --manila-ring: #d8c08a;
-  --tree-line: #a9844f;
-  --warn: #8d5a06;
-  --warn-wash: #f1e1bd;
-  --bad: #b02a17;
-  --bad-wash: #f3d3cb;
+  --kraft: #e3bd55;
+  --kraft-2: #d1a53a;
+  --kraft-3: #8a6410;
+  --kraft-ink: #2a1a00;
+  --tape: rgba(255, 250, 225, .6);
+  --hole: #1c1511;
+  --manila: #f3e6bd;
+  --manila-ring: #cf2020;
+  --tree-line: #8a6410;
+  --warn: #a8500a;
+  --warn-wash: #f0d2b0;
+  --bad: #b3141b;
+  --bad-wash: #f1c9bf;
   --focus: #1f48d6;
-  --mast-ground: #24251f;
-  --mast-ink: #f6f3eb;
-  --mast-muted: #c1bdaf;
-  --mast-rule: #656457;
-  --mast-danger: #ff967b;
+  --mast-ground: #1c1511;
+  --mast-ink: #f1e7cf;
+  --mast-muted: #c9b995;
+  --mast-rule: #5b4a38;
+  --mast-danger: #ff8a76;
   --mast-focus: #b6c6ff;
-  --shadow: 0 1px 0 rgba(23, 22, 15, .06), 0 10px 30px -18px rgba(23, 22, 15, .35);
+  --shadow: 5px 5px 0 rgba(28, 21, 17, .9);
 
   --sans: "Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
@@ -64,35 +64,35 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #171914;
-    --paper-2: #22251e;
-    --paper-3: #26241f;
-    --ink: #eeeae0;
-    --ink-2: #b0aa9c;
-    --ink-3: #8f8a7e;
-    --rule: #414437;
-    --rule-strong: #eeeae0;
-    --signal: #ff6a33;
-    --signal-ink: #ff8a5c;
-    --signal-wash: #3a1d11;
-    --ok: #5cc493;
-    --ok-wash: #15291f;
+    --paper: #1b1511;
+    --paper-2: #261d17;
+    --paper-3: #30251c;
+    --ink: #f0e5c8;
+    --ink-2: #c9b995;
+    --ink-3: #a39373;
+    --rule: #4a3a2c;
+    --rule-strong: #f0e5c8;
+    --signal: #f2c230;
+    --signal-ink: #f5cd55;
+    --signal-wash: #3a2d0a;
+    --ok: #5cc08a;
+    --ok-wash: #14291b;
     --ok-bright: #8fdcb2;
-    --kraft: #6e5532;
-    --kraft-2: #5a4428;
-    --kraft-3: #47351e;
-    --kraft-ink: #f3e3c4;
-    --tape: rgba(255, 240, 210, .34);
-    --hole: #050504;
-    --manila: #3a3324;
-    --manila-ring: #57492c;
-    --tree-line: #8a7752;
-    --warn: #e2a948;
-    --warn-wash: #2e2410;
-    --bad: #f07a63;
-    --bad-wash: #331813;
+    --kraft: #7a5a12;
+    --kraft-2: #654a0e;
+    --kraft-3: #4d3809;
+    --kraft-ink: #f5e6bd;
+    --tape: rgba(255, 240, 200, .3);
+    --hole: #050403;
+    --manila: #3a2f1e;
+    --manila-ring: #cf2020;
+    --tree-line: #8a7440;
+    --warn: #f0a050;
+    --warn-wash: #33200c;
+    --bad: #ff6a5e;
+    --bad-wash: #3a1512;
     --focus: #8aa4ff;
-    --shadow: 0 1px 0 rgba(0, 0, 0, .4), 0 12px 32px -18px rgba(0, 0, 0, .8);
+    --shadow: 5px 5px 0 #000;
     color-scheme: dark;
   }
 }
@@ -116,7 +116,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-::selection { background: var(--signal); color: #fff; }
+
 
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .2em; }
 
@@ -328,7 +328,7 @@ main { min-width: 0; padding-bottom: 80px; }
   text-wrap: balance;
   max-width: 14ch;
 }
-.statement em { font-style: normal; color: var(--signal); }
+.statement em { font-style: normal; color: var(--signal-ink); }
 .statement[data-tone="bad"] em { color: var(--bad); }
 .statement[data-tone="ok"] em { color: var(--ok); }
 
@@ -1138,4 +1138,188 @@ body[data-stale="true"] main { opacity: .55; filter: saturate(.4); transition: o
   .diag-history-head { flex-wrap: wrap; }
   .diag-history-actions { width: 100%; }
   .diag-history-actions .btn { flex: 1 1 auto; }
+}
+
+/* ======================================================================
+   ТЕМА «СССР» — конструктивизм: газетная бумага, красный, золото, тушь.
+   Слой поверх оригинальных токенов. Смысл цветов сохранён:
+   золото = идёт поиск, зелёный = подтверждено, красный = стоп/сбой.
+   Разметку и panel.js не трогает.
+   ====================================================================== */
+:root {
+  --ussr-red: #cf2020;
+  --ussr-gold: #e8b724;
+  --hard: 5px 5px 0 var(--ink);
+}
+@media (prefers-color-scheme: dark) { :root { --hard: 5px 5px 0 #000; } }
+
+body {
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(color-mix(in srgb, var(--ink) 13%, transparent) 1px, transparent 1.4px),
+    radial-gradient(color-mix(in srgb, var(--ink) 7%, transparent) 1px, transparent 1.4px);
+  background-size: 7px 7px, 13px 13px;
+  background-position: 0 0, 3px 5px;
+}
+body::after {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 5; opacity: .22; mix-blend-mode: multiply;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark) { body::after { opacity: .1; mix-blend-mode: screen; } }
+::selection { background: var(--signal); color: var(--ink); }
+
+/* бегущая лента над шапкой */
+body::before {
+  content: "★ СЛАВА ТРУДУ ★ СССР · МИНИСТЕРСТВО СВЯЗИ · УПРАВЛЕНИЕ D2K ★ ПЯТИЛЕТКУ — В ЧЕТЫРЕ ГОДА ★ ВСЁ ПОД КОНТРОЛЕМ ★ ПРОЛЕТАРИИ ВСЕХ СТРАН, СОЕДИНЯЙТЕСЬ ★";
+  display: block; overflow: hidden; white-space: nowrap; background: var(--ussr-red); color: #f6ecd3;
+  font: 700 .75rem/1 var(--mono); letter-spacing: .22em; padding: 8px 0; border-bottom: 3px solid #1c1511;
+  animation: ussr-belt 46s linear infinite;
+}
+@keyframes ussr-belt { from { text-indent: 100vw; } to { text-indent: -190ch; } }
+
+/* шапка */
+.mast { border-bottom: 6px solid var(--ussr-red); background: var(--mast-ground); }
+.mast .mark-ground { fill: var(--ussr-red); }
+.mast .mark-line { stroke: #f6ecd3; }
+.mast .mark-block { fill: var(--ussr-gold); }
+.wordmark { font-weight: 900; text-transform: uppercase; letter-spacing: .02em; }
+.wordmark::after { content: "★"; display: inline-block; margin-left: 8px; font-size: .6em; color: var(--ussr-gold); vertical-align: .3em; animation: ussr-spin 24s linear infinite; }
+@keyframes ussr-spin { to { transform: rotate(360deg); } }
+@media (min-width: 1600px) { .mast-id::after {
+  content: "СССР · Министерство связи"; font: 600 .6875rem/1.2 var(--mono); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--mast-muted); border-left: 2px solid var(--mast-rule); padding-left: 12px; margin-left: 4px;
+} }
+.mast-host { font-family: var(--mono); }
+.lamp { box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 25%, transparent); }
+.mast .lamp { box-shadow: 0 0 0 3px #5b4a38; }
+.lamp[data-tone="live"], .lamp[data-tone="ok"] { box-shadow: 0 0 0 3px #5b4a38, 0 0 12px 2px color-mix(in srgb, currentColor 0%, var(--signal)); }
+
+/* кнопки — бакелитовые клавиши */
+.btn {
+  border-width: 2px; border-radius: 3px; text-transform: uppercase; letter-spacing: .09em; font-weight: 700; font-size: .8125rem;
+  box-shadow: 0 3px 0 var(--btn-line); transition: background-color .12s, color .12s, transform .08s, box-shadow .08s;
+}
+.btn:hover { transform: translateY(-1px); box-shadow: 0 4px 0 var(--btn-line); }
+.btn:active { transform: translateY(3px); box-shadow: 0 0 0 var(--btn-line); }
+.btn[data-variant="primary"] { --btn-bg: var(--ink); --btn-fg: var(--paper); }
+.btn[data-variant="danger"] { --btn-line: var(--bad); }
+.btn[data-variant="confirm"] { --btn-bg: var(--ussr-red); --btn-line: #5a0a0a; --btn-fg: #fff; }
+.mast .btn { background: linear-gradient(#3b2f27, #241b16); box-shadow: 0 3px 0 #0b0705; border-color: #0b0705; }
+.mast .btn[data-variant="danger"] { background: linear-gradient(#e03030, #a81517); color: #fff; }
+.mast .btn:disabled { box-shadow: none; }
+.btn:disabled, .btn[aria-disabled="true"] { box-shadow: none; transform: none; }
+
+.tag { border-radius: 2px; border: 1.5px solid var(--ink); font-family: var(--mono); font-size: .6875rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+.tag[data-tone="live"] { background: var(--signal); border-color: var(--ink); color: var(--ink); }
+
+/* навигация — нумерованные «билеты» */
+.index { counter-reset: nav; }
+.index a { counter-increment: nav; border-bottom: 2px dashed color-mix(in srgb, var(--ink) 40%, transparent); text-transform: uppercase; letter-spacing: .06em; font-weight: 700; font-size: .8125rem; }
+.index a::before { content: counter(nav); font: 700 .6875rem var(--mono); color: var(--ussr-red); margin-right: 10px; }
+.index a span { flex: 1; }
+.index a[aria-current="true"] { background: var(--ink); color: var(--signal); box-shadow: inset 5px 0 0 var(--ussr-red); }
+.index a[aria-current="true"]::before { color: var(--ussr-red); }
+
+/* заголовки секций с номером */
+main { counter-reset: sec 1; }
+.sheet-head { border-bottom: 5px solid var(--ink); padding-bottom: 8px; }
+.sheet-head h2 { text-transform: uppercase; font-weight: 900; letter-spacing: -.01em; line-height: .95; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: end; column-gap: 14px; overflow-wrap: anywhere; }
+.sheet-head h2::before {
+  counter-increment: sec; content: counter(sec, decimal-leading-zero);
+  font: 900 clamp(2.4rem, 5.6vw, 4.2rem)/.9 var(--sans); color: var(--ussr-red); -webkit-text-stroke: 2px var(--ink); paint-order: stroke fill;
+}
+.sheet-head p { font-weight: 600; color: var(--ink-2); }
+
+/* «Сейчас» */
+.statement { text-transform: uppercase; font-weight: 900; letter-spacing: -.02em; line-height: .9; font-size: clamp(3rem, 8.2vw, 6.6rem); max-width: 12ch; }
+.statement em {
+  display: inline-block; background: var(--ussr-red); color: #f6ecd3; padding: 0 .12em; transform: rotate(-2.5deg) skewX(-5deg);
+  box-shadow: 6px 6px 0 var(--ink); margin-top: .08em;
+}
+.statement[data-tone] em, .statement em { color: #f6ecd3; }
+.statement[data-tone="ok"] em { background: var(--ok); color: #f6ecd3; }
+.statement[data-tone="bad"] em { background: var(--bad); color: #fff; }
+.statement[data-tone="live"] em, .statement[data-live="true"] em { background: var(--signal); color: #1c1511; }
+.lede { font-weight: 600; color: var(--ink); border-left: 8px solid var(--ussr-red); padding-left: 16px; }
+
+/* табло замеров — лампы */
+.slot-cell { width: 28px; height: 28px; border-radius: 50%; border: 4px solid #8a7a66; background: radial-gradient(circle at 35% 30%, #5a5047, #1c1511 70%); box-shadow: inset 0 2px 4px #000a; }
+.slot-cell[data-on="true"] { background: radial-gradient(circle at 35% 30%, #fff, var(--signal) 45%, #b57d00); border-color: #8a7a66; box-shadow: 0 0 16px 3px color-mix(in srgb, var(--signal) 80%, transparent); }
+.search { border-bottom: 2px dashed color-mix(in srgb, var(--ink) 45%, transparent); }
+.search-target { font-family: var(--mono); font-weight: 700; }
+.track-fill { box-shadow: 0 0 10px color-mix(in srgb, var(--signal) 60%, transparent); }
+
+/* картотека */
+.filter { border: 3px solid var(--ink); border-radius: 2px; background: color-mix(in srgb, var(--paper) 70%, #fff); box-shadow: var(--hard); }
+.filter::before { content: "Картотека"; order: -1; background: var(--ink); color: var(--paper); font: 700 .6875rem var(--sans); letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; margin-left: -8px; }
+.filter input { font-family: var(--mono); }
+.filter-count { font-family: var(--mono); color: var(--ussr-red); font-weight: 700; }
+@media (max-width: 560px) { .filter::before { display: none; } }
+
+/* семейства — карточки-бирки */
+.ftag { background: repeating-linear-gradient(0deg, transparent 0 25px, rgba(40,70,140,.17) 25px 26px), var(--manila); border-top: 0; filter: drop-shadow(5px 5px 0 var(--ink)); }
+.ftag-eyelet { background: var(--paper); box-shadow: 0 0 0 4px var(--ussr-red), inset 0 1px 2px rgba(0,0,0,.3); }
+.ftag-name { text-transform: uppercase; font-weight: 800; letter-spacing: -.01em; font-size: 1.2rem; }
+.ftag-stamp { border-width: 3px; border-radius: 3px; font-family: var(--mono); font-weight: 700; letter-spacing: .12em; }
+.ftag-fold { font-weight: 700; }
+
+/* коробки — «дела» */
+.crate { border: 3px solid var(--ink); border-radius: 3px; box-shadow: var(--hard); background: var(--paper); }
+.crate-lid { border-radius: 0; background: repeating-linear-gradient(0deg, rgba(60,40,0,.06) 0 1px, transparent 1px 5px), linear-gradient(180deg, var(--kraft), var(--kraft-2)); }
+.crate-name { text-transform: uppercase; font-weight: 900; letter-spacing: .02em; }
+.crate-name::before { content: "Дело · "; font: 700 .6875rem var(--mono); letter-spacing: .14em; color: var(--ussr-red); }
+.plan, .box h4 { font-family: var(--mono); }
+.bindings th, .diag-memory th { font-family: var(--mono); text-transform: uppercase; letter-spacing: .08em; font-size: .6875rem; border-bottom-width: 3px; }
+.bindings td, .diag-memory td { font-family: var(--mono); }
+
+/* Telegram-туннель — тёмный щит с красной тенью, цвета инвертированы локально */
+.tunnel {
+  --paper: #1c1511; --paper-2: #2a211a; --paper-3: #34281f; --ink: #f1e7cf; --ink-2: #cdbf9f; --ink-3: #a39679;
+  --rule: #5b4a38; --rule-strong: #d7c9a8; --signal: #e8b724; --signal-ink: #f5cd55; --signal-wash: #3a2d0a;
+  --ok: #5cc08a; --ok-wash: #14291b; --bad: #ff6a5e; --bad-wash: #3a1512; --warn: #f0a050; --warn-wash: #33200c;
+  --focus: #8aa4ff; --shadow: none;
+  background: #1c1511; color: #f1e7cf; border: 3px solid #1c1511; border-radius: 0; box-shadow: 8px 8px 0 var(--ussr-red);
+}
+.tunnel-word { text-transform: uppercase; font-weight: 900; letter-spacing: .02em; }
+.tunnel .btn { --btn-line: #d7c9a8; }
+
+/* обновления и диагностика */
+.upd-knob { border-radius: 3px; border-width: 2px; }
+.upd-knob::after { border-radius: 2px; }
+.upd-text h3, .diag h3, .diag-history-head h3 { text-transform: uppercase; font-weight: 800; letter-spacing: .02em; }
+.diag-collection-state { border-radius: 2px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .08em; border-width: 1.5px; }
+.diag-history { border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); }
+.facts dt, .facts dd { font-family: var(--mono); }
+.stages b { text-transform: uppercase; letter-spacing: .04em; }
+.notice { border-left: 8px solid var(--ussr-red); border-bottom-width: 2px; }
+
+/* диалог — бланк «форма №1» */
+.ask { border: 3px solid var(--ink); border-radius: 0; background: var(--paper); box-shadow: 10px 10px 0 var(--ussr-red); }
+.ask[open] { animation: ussr-slam .32s cubic-bezier(.3, 1.5, .5, 1); }
+@keyframes ussr-slam { from { transform: scale(1.2) rotate(-2deg); opacity: 0; } }
+.ask::backdrop { background: rgba(28, 21, 17, .72); }
+.ask h2 { background: var(--ussr-red); color: #f6ecd3; text-transform: uppercase; letter-spacing: .06em; padding: 12px 22px; margin: 0; }
+.ask h2::before { content: "Форма №1 · требуется подтверждение"; display: block; font: 600 .625rem var(--mono); letter-spacing: .18em; opacity: .85; margin-bottom: 4px; }
+
+/* подвал */
+.colophon { border-top: 6px double var(--ink); align-items: center; font-family: var(--mono); }
+.colophon::before {
+  content: "ОТК"; order: 98; margin-left: auto; width: 64px; height: 64px; display: grid; place-items: center; border: 3px solid var(--ussr-red); border-radius: 50%;
+  color: var(--ussr-red); font: 800 1rem var(--sans); transform: rotate(-14deg);
+}
+.colophon::after { content: "★ Сделано в СССР · ГОСТ 24.10.2026"; order: 99; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--ussr-red); }
+
+@media (max-width: 860px) { @media (min-width: 1600px) { .mast-id::after { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  body::before { animation: none; text-indent: 0; }
+  .wordmark::after, .ask[open] { animation: none; }
+}
+
+/* тёмная схема («ночная смена») */
+@media (prefers-color-scheme: dark) {
+  .index a[aria-current="true"] { background: var(--ussr-red); color: #f6ecd3; box-shadow: none; }
+  .index a[aria-current="true"]::before { color: var(--ussr-gold); }
+  .filter { background: var(--paper-2); }
+  .filter::before { background: var(--ussr-red); color: #f6ecd3; }
+  .btn[data-variant="primary"] { --btn-bg: var(--ink); --btn-fg: #1c1511; }
 }
