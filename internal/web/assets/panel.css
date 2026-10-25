@@ -1323,3 +1323,4 @@ main { counter-reset: sec 1; }
   .filter::before { background: var(--ussr-red); color: #f6ecd3; }
   .btn[data-variant="primary"] { --btn-bg: var(--ink); --btn-fg: #1c1511; }
 }
+}
